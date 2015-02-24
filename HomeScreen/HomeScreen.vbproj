@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0EC12A3-8945-46C4-BAAA-F6E566CAED3A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HomeScreen.My.MyApplication</StartupObject>
+    <RootNamespace>HomeScreen</RootNamespace>
+    <AssemblyName>HomeScreen</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HomeScreen.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HomeScreen.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClimateScreen.Designer.vb">
+      <DependentUpon>ClimateScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClimateScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Emergency.Designer.vb">
+      <DependentUpon>Emergency.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Emergency.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entertainment.Designer.vb">
+      <DependentUpon>Entertainment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Entertainment.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LocateCarScreen.Designer.vb">
+      <DependentUpon>LocateCarScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocateCarScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeScreen.Designer.vb">
+      <DependentUpon>HomeScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomeScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Navigation.Designer.vb">
+      <DependentUpon>Navigation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Alert.Designer.vb">
+      <DependentUpon>Alert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alert.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PerformanceTrack.Designer.vb">
+      <DependentUpon>PerformanceTrack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeatConf.Designer.vb">
+      <DependentUpon>SeatConf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceTrack.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SeatConf.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SeatScreen.Designer.vb">
+      <DependentUpon>SeatScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeatScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SecurityScreen.Designer.vb">
+      <DependentUpon>SecurityScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SteeringWheel.Designer.vb">
+      <DependentUpon>SteeringWheel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SteeringWheel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tempDialog.Designer.vb">
+      <DependentUpon>tempDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tempDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClimateScreen.resx">
+      <DependentUpon>ClimateScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emergency.resx">
+      <DependentUpon>Emergency.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entertainment.resx">
+      <DependentUpon>Entertainment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocateCarScreen.resx">
+      <DependentUpon>LocateCarScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeScreen.resx">
+      <DependentUpon>HomeScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigation.resx">
+      <DependentUpon>Navigation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alert.resx">
+      <DependentUpon>Alert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerformanceTrack.resx">
+      <DependentUpon>PerformanceTrack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeatConf.resx">
+      <DependentUpon>SeatConf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeatScreen.resx">
+      <DependentUpon>SeatScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityScreen.resx">
+      <DependentUpon>SecurityScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SteeringWheel.resx">
+      <DependentUpon>SteeringWheel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tempDialog.resx">
+      <DependentUpon>tempDialog.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s5Template.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s5Template1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thermometer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\dashboard.png" />
+    <None Include="Resources\light_off.png" />
+    <None Include="Resources\light_on.png" />
+    <Content Include="Resources\mediaplayer.jpg" />
+    <Content Include="Resources\pause.png" />
+    <Content Include="Resources\performance.png" />
+    <None Include="Resources\phoneCalling.wav" />
+    <Content Include="Resources\record.png" />
+    <None Include="Resources\seatForwardBack %282%29.png" />
+    <None Include="Resources\SeatHeight.png" />
+    <None Include="Resources\SeatTilt.png" />
+    <None Include="Resources\Seat.png" />
+    <Content Include="Resources\settings-icon.jpg" />
+    <None Include="Resources\side_left.jpg" />
+    <None Include="Resources\side_right.jpg" />
+    <None Include="Resources\steering_wheel-512.png" />
+    <Content Include="Resources\vol100.jpg" />
+    <Content Include="Resources\vol75.jpg" />
+    <None Include="Resources\startButtonOff.png" />
+    <None Include="Resources\startButton.png" />
+    <None Include="Resources\SeatCustomization.jpg" />
+    <None Include="Resources\warning.png" />
+    <None Include="Resources\phone.png" />
+    <None Include="Resources\Ryerson.png" />
+    <None Include="Resources\temp.png" />
+    <None Include="Resources\front_camera.png" />
+    <None Include="Resources\back_camera.png" />
+    <None Include="Resources\heater.png" />
+    <None Include="Resources\heatSteering.jpg" />
+    <None Include="Resources\dirFace.png" />
+    <None Include="Resources\dirFaceFeet.png" />
+    <None Include="Resources\dirFeet.png" />
+    <None Include="Resources\fan.png" />
+    <None Include="Resources\intakeIn.png" />
+    <None Include="Resources\intakeOut.png" />
+    <None Include="Resources\fan2.png" />
+    <None Include="Resources\LocateCar.png" />
+    <None Include="Resources\findCar.png" />
+    <None Include="Resources\carHorn.jpg" />
+    <None Include="Resources\carHorn.wav" />
+    <Content Include="Resources\29_14.WAV" />
+    <None Include="Resources\cHorn.WAV" />
+    <None Include="Resources\auto_horn_1972_toyota_single_long_blast.wav" />
+    <Content Include="Resources\entertainment.png" />
+    <Content Include="Resources\EQ.png" />
+    <Content Include="Resources\Nav_Map.png" />
+    <None Include="Resources\scaryblackman.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
